@@ -1,6 +1,6 @@
 # Project Name
 
-![Project Banner](path-to-your-banner-image.png)
+![Project Banner](https://cdn.brandfetch.io/idY4T0Je0_/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B)
 
 ## Table of Contents
 - [Overview](#overview)
