@@ -1,38 +1,68 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# Dependencies
-node_modules
-.pnp
+# ========================
+# Node / Bun / Monorepo
+# ========================
+node_modules/
+**/node_modules/
+.pnp/
 .pnp.js
+bun.lockb
 
-# Local env files
+# ========================
+# Environment Files
+# ========================
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!env.example  # keep if you have a template
 
-# Testing
-coverage
-
-# Turbo
-.turbo
-
-# Vercel
-.vercel
-
+# ========================
 # Build Outputs
+# ========================
 .next/
 out/
-build
-dist
+build/
+dist/
+**/build/
+**/dist/
 
+# ========================
+# Turborepo
+# ========================
+.turbo/
 
-# Debug
+# ========================
+# Vercel
+# ========================
+.vercel/
+
+# ========================
+# Logs / Debug
+# ========================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+bun-debug.log*
 
-# Misc
+# ========================
+# Testing
+# ========================
+coverage/
+**/coverage/
+
+# ========================
+# OS / Misc
+# ========================
 .DS_Store
 *.pem
+*.key
+*.crt
+*.log
+
+# ========================
+# Editor / IDE
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
