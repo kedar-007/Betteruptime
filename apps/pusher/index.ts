@@ -1,6 +1,6 @@
 import { prismaClient } from "store/client";
 import { xAddBulk } from "redisstream/client";
-
+// Pusher that would push the all websites in to the redis stream and the stream and worker will read the queue and will hit the websites
 async function main() {
     let websites = await prismaClient.website.findMany({
         select: {
