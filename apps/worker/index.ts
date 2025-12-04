@@ -2,6 +2,7 @@ import axios from "axios";
 import { xAckBulk, xReadGroup } from "redisstream/client";
 import { prismaClient } from "store/client";
 
+// Worker will read the queue and excute the tasks as per the queue
 const REGION_ID = process.env.REGION_ID!;
 const WORKER_ID = process.env.WORKER_ID!;
 
